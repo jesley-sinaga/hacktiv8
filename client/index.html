@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NanyaAI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <div class="header-content">
+                <div class="avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div>
+                    <h1>NanyaAI</h1>
+                    <span class="status">Online</span>
+                </div>
+            </div>
+        </header>
+        
+        <main id="chat-box">
+            <!-- Messages will appear here -->
+        </main>
+        
+        <div class="input-area">
+            <div id="file-preview-container" class="hidden">
+                <img id="file-preview" src="" alt="Preview">
+                <button id="remove-file-btn" title="Remove file"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div class="input-container">
+                <input type="file" id="file-input" accept="image/*" class="hidden" />
+                <button id="attach-btn" title="Attach an image"><i class="fa-solid fa-paperclip"></i></button>
+                <input type="text" id="user-input" placeholder="Tanya NanyaAI atau ketik '@'" autocomplete="off" />
+                <button id="send-btn" title="Send message"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
